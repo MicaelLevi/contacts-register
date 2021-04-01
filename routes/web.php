@@ -13,6 +13,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-//Route::get('/', 'App\Http\Controllers\HomeController@index');
 Route::get('/', [HomeController::class, 'index']);
-Route::post('/'. [HomeController::class, 'registerForm']);
+Route::post('/store', [HomeController::class, 'store']);
+Route::get('/retrieve', [HomeController::class, 'retrieve']);
